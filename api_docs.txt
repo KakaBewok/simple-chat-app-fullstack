@@ -1,0 +1,30 @@
+//send message
+endPoint: /chat
+method: POST
+bodyRequest: {
+    "sender": "Rizal",
+    "receiver": "Ima",
+    "message": "I love you"
+}
+response: {
+    "sender": "Rizal",
+    "receiver": "Ima",
+    "message": "I love you",
+    "_id": "64deee77dd5d04045f4919bf",
+    "timestamp": "2023-08-18T04:07:19.200Z",
+    "__v": 0
+}
+
+//get message
+endPoint: /chat/:sender/:receiver
+method: GET
+response: [
+    {
+        "_id": "64deee77dd5d04045f4919bf",
+        "sender": "Rizal",
+        "receiver": "Ima",
+        "message": "I love you",
+        "timestamp": "2023-08-18T04:07:19.200Z",
+        "__v": 0
+    }
+]
